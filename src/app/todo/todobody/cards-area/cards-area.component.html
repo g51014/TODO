@@ -1,0 +1,8 @@
+  <div [style.margin]="cardsInfo.cardsMargin+'px'" [style.width]="cardsInfo.cardsWidth+'px'" class='card'>
+    <h1>{{title|slice:0:8}}</h1>
+    <p id={{id}} (dblclick)='DoEdit($event.target.id)' *ngIf=!editStatus>{{content}}</p>
+    <input id={{id}} (keydown.escape) = 'CancleEdit()' (keydown.enter)='DoEdit($event.target.id,$event.target.value)' *ngIf= editStatus class='edit-box'>
+    <button class='complete-button'  id={{id}} (click)='DoDelete($event.target.id)'>{{buttonTitle|uppercase}}</button>
+  </div>
+
+

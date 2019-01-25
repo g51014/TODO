@@ -1,0 +1,44 @@
+
+.checkbox
+{
+  font-size: 20px;
+  padding-top: 10px;
+  background-color: white;
+  width:20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(29, 31, 32);
+  font-family: sans-serif;
+  border-radius: 100%;
+}
+
+.checkbox:hover
+{
+  background-color: rgba(231, 49, 49, 0.932);
+}
+
+.list
+{
+  background-color: white;
+  border-color:  rgb(29, 31, 32);
+  border-width: 1px;
+  border-style: solid;
+  width: 30%;
+  margin: 0 auto;
+  height: 40px;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.list:hover
+{
+  background-color: rgb(206, 206, 206);
+}
+
+.list-content
+{
+  font-size: 30px;
+  padding-left: 20px;
+  font-family: sans-serif;
+}

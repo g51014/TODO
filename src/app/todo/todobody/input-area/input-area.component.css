@@ -1,0 +1,15 @@
+#input-box
+{
+  height: 20px;
+  width: 30%;
+  margin: 0 auto;
+  font-size: 35px;
+  padding: 10px;
+  text-align: left;
+}
+
+#input-area
+{
+  text-align: center;
+  padding-top: 50px;
+}

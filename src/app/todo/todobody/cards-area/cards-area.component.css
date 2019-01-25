@@ -1,0 +1,83 @@
+
+.card
+{
+  text-align: center;
+  padding: 15px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color:  rgb(29, 31, 32); */
+  background-color: rgb(174, 238, 195);
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.card:hover
+{
+  transition: 1s;
+  opacity: 1;
+}
+
+h1
+{
+  font-size: 50px;
+  margin: 0px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p
+{
+  font-size: 25px;
+  margin: 15px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  word-break: break-all;
+}
+
+.complete-button
+{
+  font-size: 20px;
+  background-color: rgb(127, 127, 129);
+  color: white;
+  border-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+.complete-button:hover
+{
+  background-color: rgb(29, 31, 32);
+}
+
+.edit-box
+{
+  display: block;
+  border-style: none;
+  background-color: rgb(174, 238, 195);
+  margin: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width:1200px)
+{
+  .complete-button
+  {
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 10px;
+  }
+
+  h1
+  {
+    font-size: 20px;
+  }
+
+  p,.edit-box
+  {
+    font-size: 10px;
+  }
+}

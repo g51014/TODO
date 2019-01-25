@@ -1,0 +1,6 @@
+<app-input-area (add)='DoAdd($event)' [length]= data.length></app-input-area>
+<div [style.padding]="cardsInfo.padding+'px'">
+  <ng-container *ngFor='let item of data'>
+    <app-cards-area (edit)='DoEdit($event)' (delete)='DoDelete($event)' [data]= item [cardsInfo]= cardsInfo ></app-cards-area>
+  </ng-container>
+</div>
