@@ -13,7 +13,12 @@ export class InputAreaComponent implements OnInit {
   }
   DoAdd(title) {
     if ( title !== '') {
-      this.add.emit({'title': title, 'content': 'Double click to modify', 'complete': false, 'id': this.length + 1});
+      this.add.emit({
+      'title': title,
+      'content': 'Double click to modify',
+      'complete': false,
+      'id': this.length + 1 ,
+      'bgColor': 'rgb(174, 238, 195)'});
     }
   }
 }

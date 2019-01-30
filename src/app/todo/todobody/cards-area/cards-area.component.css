@@ -6,7 +6,7 @@
   /* border-style: solid;
   border-width: 1px;
   border-color:  rgb(29, 31, 32); */
-  background-color: rgb(174, 238, 195);
+  /* background-color: rgb(174, 238, 195); */
   display: inline-block;
   opacity: 0.5;
 }
@@ -43,6 +43,7 @@ p
   padding: 10px 30px;
   letter-spacing: 1px;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .complete-button:hover
@@ -60,6 +61,37 @@ p
   border-bottom-width: 1px;
   font-size: 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.color-picker
+{
+  margin: 15px  15px;
+  padding: 10px;
+  border-style: solid;
+  opacity: 0.5;
+  border-radius: 100%;
+  border-width: 1px;
+  border-color: rgb(29, 31, 32);
+}
+
+.color-picker:hover
+{
+  opacity: 10;
+}
+
+#red
+{
+  background-color: brown;
+}
+
+#green
+{
+  background-color: rgb(5, 170, 5);
+}
+
+#yellow
+{
+  background-color: rgb(240, 226, 29);
 }
 
 @media only screen and (max-width:1200px)

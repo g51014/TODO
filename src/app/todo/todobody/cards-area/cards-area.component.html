@@ -1,8 +1,11 @@
-  <div [style.margin]="cardsInfo.cardsMargin+'px'" [style.width]="cardsInfo.cardsWidth+'px'" class='card'>
+  <div #card id={{id}} [style.background-color] = "cardBgColor" [style.margin]="cardsInfo.cardsMargin+'px'" [style.width]="cardsInfo.cardsWidth+'px'" class='card'>
     <h1>{{title|slice:0:8}}</h1>
-    <p id={{id}} (dblclick)='DoEdit($event.target.id)' *ngIf=!editStatus>{{content}}</p>
-    <input id={{id}} (keydown.escape) = 'CancleEdit()' (keydown.enter)='DoEdit($event.target.id,$event.target.value)' *ngIf= editStatus class='edit-box'>
-    <button class='complete-button'  id={{id}} (click)='DoDelete($event.target.id)'>{{buttonTitle|uppercase}}</button>
+    <p  (dblclick)='DoEdit()' *ngIf=!editStatus>{{content}}</p>
+    <input  [style.background-color] = "cardBgColor" (keydown.escape) = 'CancleEdit()' (keydown.enter)='DoEdit($event.target.value)' *ngIf= editStatus class='edit-box'>
+    <button #greenButton id='green' class='color-picker'></button>
+    <button #yellowButton  id='yellow' class='color-picker'></button>
+    <button #redButton  id='red' class='color-picker'></button>
+    <button class='complete-button' (click)='DoDelete($event.target)'>{{buttonTitle|uppercase}}</button>
   </div>
 
 

@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
+import { Observable, fromEvent } from 'rxjs';
+import {map} from 'rxjs/operators';
 @Component({
   selector: 'app-todobody',
   templateUrl: './todobody.component.html',
@@ -12,8 +13,8 @@ export class TodobodyComponent implements OnInit {
   cardsWidth: number;
   padding: number;
   colNum: number;
-  test;
-  constructor() { }
+  constructor() {
+   }
   ngOnInit() {
     this.data = [];
     this.padding = 50;
