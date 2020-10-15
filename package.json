@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href https://g51014.github.io/TODO/",
+    "deploy": "ngh --dir dist/todolist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
